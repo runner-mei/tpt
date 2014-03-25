@@ -1,0 +1,16 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+        <meta charset="utf-8" />
+        <meta name="description" content="Hi, it is a redirect page."/>
+  </head>
+  <body>
+    <div>Hi, it is a redirect page, redirecting...</strong></div>  
+    <script language="javascript">
+      var redirect_path = "/demo/7/";
+      var id = new Date().getTime();
+      document.body.lastChild().setAttribute("src", "javascripts/redirect.js?id=" + id);
+    </script>
+    <script src="javascripts/redirect.js"></script>
+  </body>
+</html>
