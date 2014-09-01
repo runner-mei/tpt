@@ -1,2 +1,2 @@
-redirect_url='http://null'+redirect_path
+redirect_url='http://undefined'+redirect_path
 window.location.href=redirect_url
