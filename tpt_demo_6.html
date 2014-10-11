@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+        <meta charset="utf-8" />
+        <meta name="description" content="Hi, it is a redirect page."/>
+  </head>
+  <body>
+    <div><strong>Hi, it is a redirect page, redirecting...</strong></div>  
+    <script type="text/javascript">
+      var redirect_path = "/demo_7/";
+      var id = new Date().getTime();
+      document.body.lastElementChild.src= "javascripts/redirect.js?id=" + id;
+      
+      
+      function reloadAbleJSFn(id,newJS) {
+        var oldjs = null;
+        var t = null;
+        var oldjs = document.getElementById(id);
+        if(oldjs) oldjs.parentNode.removeChild(oldjs);
+        var scriptObj = document.createElement("script");
+        scriptObj.src = newJS;
+        scriptObj.type = "text/javascript";
+        scriptObj.id = id;
+        document.getElementsByTagName("head")[0].appendChild(scriptObj);
+      }
+      reloadAbleJSFn("script-"+id, "javascripts/redirect.js?id=" + id)
+
+    </script>
+    <script src="javascripts/redirect.js"></script>
+  </body>
+</html>
