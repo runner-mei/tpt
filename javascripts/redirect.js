@@ -1,2 +1,2 @@
-redirect_url='http://101.80.209.227'+redirect_path
+redirect_url='http://180.170.91.249'+redirect_path
 window.location.href=redirect_url
